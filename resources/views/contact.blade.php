@@ -12,6 +12,7 @@
         </div>
     </div>
 </section>
+
 <!-- Contact Content -->
 <section class="contact-content">
     <div class="container">
