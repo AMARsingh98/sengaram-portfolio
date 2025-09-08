@@ -21,7 +21,7 @@
             <div class="contact-form-section">
                 <div class="form-card">
                     <h2>Send Me a Message</h2>
-                    <p>Fill out the form below and I'll get back to you within 24 hours.</p>
+                    <p>Fill out the form below and I'll get back to you within 24 hours</p>
                     
                     @if(session('success'))
                     <div class="success-message">
