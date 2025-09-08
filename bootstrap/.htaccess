@@ -1,0 +1,7 @@
+Options -Indexes
+
+# Block all access
+<Files "*">
+    Order allow,deny
+    Deny from all
+</Files>

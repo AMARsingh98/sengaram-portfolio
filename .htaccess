@@ -1,0 +1,70 @@
+# Protect sensitive files
+<Files ".env">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files ".env.*">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "composer.json">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "composer.lock">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "package.json">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "package-lock.json">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.log">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.md">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Block access to Laravel directories
+RedirectMatch 403 ^/storage/.*$
+RedirectMatch 403 ^/bootstrap/.*$
+RedirectMatch 403 ^/config/.*$
+RedirectMatch 403 ^/database/.*$
+RedirectMatch 403 ^/routes/.*$
+RedirectMatch 403 ^/tests/.*$
+RedirectMatch 403 ^/vendor/.*$
+RedirectMatch 403 ^/app/.*$
+
+# Block backup and temporary files
+<FilesMatch "\.(bak|backup|old|tmp|temp|swp|~)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Block PHP files in uploads
+<Directory "storage/app/public">
+    <FilesMatch "\.php$">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+</Directory>
+
+# Laravel URL rewriting
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

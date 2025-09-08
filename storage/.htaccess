@@ -1,0 +1,13 @@
+Options -Indexes
+
+# Block all access to storage directory
+<Files "*">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Block PHP execution
+<FilesMatch "\.php$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
