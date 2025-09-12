@@ -85,7 +85,7 @@
                             <label for="budget">Budget Range</label>
                             <select id="budget" name="budget" class="form-input">
                                 <option value="">Select budget range</option>
-                                <option value="under_5000">Under $1,000</option>
+                                <option value="under_1000">Under $1,000</option>
                                 <option value="1000_2500">$1,000 - $2,500</option>
                                 <option value="2500_5000">$2,500 - $5,000</option>
                                 <option value="5000_plus">$5,000+</option>
