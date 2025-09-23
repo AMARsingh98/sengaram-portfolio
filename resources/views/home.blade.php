@@ -17,7 +17,7 @@
             <p class="brand-description">Software Engineer with 4.5+ years of experience, skilled in building scalable systems. Developed solutions that increased sales by 25% through data-driven insights.</p>
             
             <div class="brand-buttons">
-                <a href="{{ route('portfolio') }}" class="btn-primary">
+                <a href="{{ route('amarsinghsengar') }}" class="btn-primary">
                     Explore Portfolio
                     <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -57,14 +57,14 @@
 <section class="quick-links">
     <div class="container">
         <div class="links-grid">
-            <a href="{{ route('portfolio') }}" class="link-card">
+            <a href="{{ route('amarsinghsengar') }}" class="link-card">
                 <div class="link-icon">👨💻</div>
                 <h3>About Me</h3>
                 <p>Learn about my experience, skills, and journey as a software engineer.</p>
                 <span class="link-arrow">→</span>
             </a>
             
-            <a href="{{ route('portfolio') }}#projects" class="link-card">
+            <a href="{{ route('amarsinghsengar') }}#projects" class="link-card">
                 <div class="link-icon">🚀</div>
                 <h3>My Projects</h3>
                 <p>Explore my portfolio of web applications and development projects.</p>

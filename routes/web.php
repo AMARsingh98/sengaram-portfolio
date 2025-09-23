@@ -7,9 +7,9 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/portfolio', function () {
+Route::get('/amarsinghsengar', function () {
     return view('portfolio');
-})->name('portfolio');
+})->name('amarsinghsengar');
 
 Route::get('/contact', function () {
     return view('contact');

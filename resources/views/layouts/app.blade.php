@@ -34,7 +34,7 @@
                 
                 <ul class="nav-menu">
                     <li><a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a></li>
-                    <li><a href="{{ route('portfolio') }}" class="nav-link {{ request()->routeIs('portfolio') ? 'active' : '' }}">About</a></li>
+                    <li><a href="{{ route('amarsinghsengar') }}" class="nav-link {{ request()->routeIs('amarsinghsengar') ? 'active' : '' }}">About</a></li>
                     <li><a href="{{ route('contact') }}" class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a></li>
                     <li><a href="{{ route('contact') }}" class="btn-hire">Hire Me</a></li>
                 </ul>
@@ -51,7 +51,7 @@
             <div class="mobile-menu" id="mobile-menu">
                 <ul class="mobile-nav-menu">
                     <li><a href="{{ route('home') }}" class="nav-link">Home</a></li>
-                    <li><a href="{{ route('portfolio') }}" class="nav-link">About</a></li>
+                    <li><a href="{{ route('amarsinghsengar') }}" class="nav-link">About</a></li>
                     <li><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
                     <li><a href="{{ route('contact') }}" class="btn-hire">Hire Me</a></li>
                 </ul>
