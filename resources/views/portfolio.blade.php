@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Portfolio - SENGARAM')
+@section('title', 'Amar Singh Sengar | Sengaram.in ')
 
 @section('content')
 <!-- About Hero Section -->

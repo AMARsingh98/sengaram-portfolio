@@ -16,13 +16,26 @@
         
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 	<!-- Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZCRC73056"></script>
+	<script async src="https://www.googletagmanager.in/gtag/js?id=G-MZCRC73056"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 	  gtag('config', 'G-MZCRC73056');
 	</script>
+    <!-- JSON-LD Structured Data for Amar Singh Sengar -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Amar Singh Sengar",
+            "url": "https://sengaram.in",
+            "sameAs": [
+            "https://www.linkedin.com/in/amar-singh-sengar-a57670183/",
+            "https://www.facebook.com/amarsingh.amarsingh.5836"
+            ]
+        }
+    </script>
 
 </head>
 <body>
