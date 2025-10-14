@@ -23,7 +23,7 @@
             <div class="about-image">
                 <div class="profile-card">
                     <div class="profile-image">
-                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQFK13ZJDaxgEA/profile-displayphoto-shrink_800_800/B4DZPj2e0.HMAc-/0/1734694532401?e=1759968000&v=beta&t=dU01vBoi-dklA1fyEnWSnmb7qiplHZx0s_Kw_KCv2zM" alt="Amar Singh Sengar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="{{ route('profile.image') }}" alt="Amar Singh Sengar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="profile-placeholder" style="display: none;">👨💻</div>
                     </div>
                     <h3>Amar Singh Sengar</h3>

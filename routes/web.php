@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProfileImageController;
 
 Route::get('/', function () {
     return view('home');
@@ -16,3 +17,5 @@ Route::get('/contact', function () {
 })->name('contact');
 
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+
+Route::get('/profile-image', [ProfileImageController::class, 'getLinkedInImage'])->name('profile.image');
