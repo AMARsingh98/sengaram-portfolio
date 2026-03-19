@@ -97,6 +97,7 @@
                     <li><a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a></li>
                     <li><a href="{{ route('amarsinghsengar') }}" class="nav-link {{ request()->routeIs('amarsinghsengar') ? 'active' : '' }}">About</a></li>
                     <li><a href="{{ route('contact') }}" class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a></li>
+                    <li><a href="https://memory-race.online/" target="_blank" class="nav-link">Game</a></li>
                     <li><a href="{{ route('contact') }}" class="btn-hire">Hire Me</a></li>
                 </ul>
                 
@@ -114,6 +115,7 @@
                     <li><a href="{{ route('home') }}" class="nav-link">Home</a></li>
                     <li><a href="{{ route('amarsinghsengar') }}" class="nav-link">About</a></li>
                     <li><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
+                    <li><a href="https://memory-race.online/" target="_blank" class="nav-link">Game</a></li>
                     <li><a href="{{ route('contact') }}" class="btn-hire">Hire Me</a></li>
                 </ul>
             </div>
