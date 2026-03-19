@@ -1,6 +1,23 @@
 @extends('layouts.app')
 
-@section('title', 'Contact - SENGARAM')
+@section('title', 'Hire Amar Singh Sengar | Contact Senior Software Engineer | Sengaram.in')
+@section('description', 'Get in touch with Amar Singh Sengar – Senior Software Engineer available for web development projects. Specialises in PHP, Laravel, Python & MySQL. Let\'s build something together.')
+@section('canonical', 'https://sengaram.in/contact')
+@section('og_title', 'Hire Amar Singh Sengar | Contact Senior Software Engineer')
+@section('og_description', 'Looking to hire a Senior Software Engineer? Contact Amar Singh Sengar for PHP, Laravel, Python & MySQL development projects. Let\'s build something together.')
+@section('robots', 'index, follow')
+@section('structured_data')
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sengaram.in/"},
+        {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://sengaram.in/contact"}
+    ]
+}
+</script>
+@endsection
 
 @section('content')
 <!-- Contact Hero -->

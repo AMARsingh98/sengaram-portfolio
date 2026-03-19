@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Amar Singh Sengar | Sengaram.in')
+@section('title', 'Amar Singh Sengar | Senior Software Engineer | Sengaram.in')
+@section('description', 'Amar Singh Sengar (Amar Sengar) – Senior Software Engineer with 4.5+ years of experience in PHP, Laravel, Python & MySQL. Available for freelance and full-time web development projects.')
+@section('canonical', 'https://sengaram.in/')
+@section('og_title', 'Amar Singh Sengar | Senior Software Engineer | Sengaram.in')
+@section('og_description', 'Amar Singh Sengar – Senior Software Engineer with 4.5+ years of experience building scalable web applications. Expert in PHP, Laravel, Python & MySQL. Hire engineer Amar for your next project.')
+@section('keywords', 'Amar Singh Sengar, Amar Sengar, Amar Singh, engineer Amar, Amar engineer, Amar software engineer, Sengaram, PHP developer India, Laravel developer, senior software engineer India')
 
 @section('content')
 <!-- Hero Branding Section -->
@@ -13,8 +18,8 @@
                 </div>
             </div>
             <h1 class="brand-title">SENGARAM</h1>
-            <p class="brand-tagline">Building ideas into scalable web solutions</p>
-            <p class="brand-description">Software Engineer with 4.5+ years of experience, skilled in building scalable systems. Developed solutions that increased sales by 25% through data-driven insights.</p>
+            <p class="brand-tagline">Portfolio of <strong>Amar Singh Sengar</strong> – Senior Software Engineer</p>
+            <p class="brand-description">Amar Singh Sengar is a Software Engineer with 4.5+ years of experience, skilled in building scalable systems. Engineer Amar developed solutions that increased sales by 25% through data-driven insights.</p>
             
             <div class="brand-buttons">
                 <a href="{{ route('amarsinghsengar') }}" class="btn-primary">
@@ -59,8 +64,8 @@
         <div class="links-grid">
             <a href="{{ route('amarsinghsengar') }}" class="link-card">
                 <div class="link-icon">👨💻</div>
-                <h3>About Me</h3>
-                <p>Learn about my experience, skills, and journey as a software engineer.</p>
+                <h3>About Amar Singh Sengar</h3>
+                <p>Learn about Amar Sengar's experience, skills, and journey as a senior software engineer.</p>
                 <span class="link-arrow">→</span>
             </a>
             

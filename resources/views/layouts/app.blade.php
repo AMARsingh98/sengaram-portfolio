@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'SENGARAM - Building ideas into scalable web solutions')</title>
-    <meta name="description" content="@yield('description', 'Senior Software Engineer with 4+ years of experience in web development. Specializing in PHP, Laravel, and modern web technologies.')">
+    <title>@yield('title', 'Amar Singh Sengar - Senior Software Engineer | PHP Laravel Developer Portfolio')</title>
+    <meta name="description" content="@yield('description', 'Amar Singh Sengar - Senior Software Engineer with 4.5+ years experience. Expert in PHP, Laravel, Python, MySQL. Built solutions that increased sales by 25%. Hire for web development projects.')">
+    <meta name="robots" content="@yield('robots', 'index, follow')">
+    @hasSection('keywords')<meta name="keywords" content="@yield('keywords')">@endif
     <meta name="theme-color" content="#6366f1">
+    <link rel="canonical" href="@yield('canonical', 'https://sengaram.in' . request()->getPathInfo())">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="@yield('og_type', 'website')">
+    <meta property="og:url" content="@yield('canonical', 'https://sengaram.in' . request()->getPathInfo())">
+    <meta property="og:title" content="@yield('og_title', 'Amar Singh Sengar - Senior Software Engineer | PHP Laravel Developer')">
+    <meta property="og:description" content="@yield('og_description', 'Senior Software Engineer with 4.5+ years experience in PHP, Laravel, Python & MySQL. Building scalable web solutions. Hire me for your next project.')">
+    <meta property="og:image" content="@yield('og_image', 'https://sengaram.in/images/default-profile-withbg.jpg')">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Sengaram.in">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('og_title', 'Amar Singh Sengar - Senior Software Engineer | PHP Laravel Developer')">
+    <meta name="twitter:description" content="@yield('og_description', 'Senior Software Engineer with 4.5+ years experience in PHP, Laravel, Python & MySQL. Building scalable web solutions.')">
+    <meta name="twitter:image" content="@yield('og_image', 'https://sengaram.in/images/default-profile-withbg.jpg')">
+
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://www.googletagmanager.com">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
@@ -14,29 +35,55 @@
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
-        
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 	<!-- Google Analytics -->
-	<script async src="https://www.googletagmanager.in/gtag/js?id=G-MZCRC73056"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZCRC73056"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 	  gtag('config', 'G-MZCRC73056');
 	</script>
-    <!-- JSON-LD Structured Data for Amar Singh Sengar -->
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
+    [
         {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Amar Singh Sengar",
+            "alternateName": ["Amar Sengar", "Amar Singh", "Engineer Amar"],
+            "description": "Amar Singh Sengar is a Senior Software Engineer with 4.5+ years of experience in PHP, Laravel, Python and MySQL. Also known as Amar Sengar, engineer Amar built data-driven systems that increased sales by 25%.",
             "url": "https://sengaram.in",
+            "jobTitle": "Senior Software Engineer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Alpha-Vector Pvt. Ltd"
+            },
+            "knowsAbout": ["PHP", "Laravel", "Python", "MySQL", "JavaScript", "Web Development", "API Development", "E-commerce"],
             "sameAs": [
-            "https://www.linkedin.com/in/amar-singh-sengar-a57670183/",
-            "https://www.facebook.com/amarsingh.amarsingh.5836"
-            ]
+                "https://sengaram.in/amarsinghsengar",
+                "https://www.linkedin.com/in/amar-singh-sengar-a57670183/",
+                "https://www.facebook.com/amarsingh.amarsingh.5836"
+            ],
+            "email": "amarsinghsengar98@gmail.com",
+            "telephone": "+919799295681",
+            "image": "https://sengaram.in/images/default-profile-withbg.jpg",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "IN"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Sengaram.in - Amar Singh Sengar",
+            "url": "https://sengaram.in",
+            "description": "Portfolio of Amar Singh Sengar, Senior Software Engineer specializing in PHP, Laravel, Python and MySQL."
         }
+    ]
     </script>
+    @yield('structured_data')
 
 </head>
 <body>

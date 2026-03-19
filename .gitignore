@@ -36,3 +36,45 @@ database/database.sqlite
 .DS_Store
 Thumbs.db
 
+sengaram-key.pem
+
+# AWS credentials & sensitive config
+aws-config.json
+aws-credentials.txt
+aws-commands.txt
+cloudfront-config.json
+cloudfront-domain-config.json
+current-config.json
+dns-record.json
+s3-policy.json
+s3-policy-domain.json
+update-cloudfront.json
+update-cloudfront-domain.json
+
+# Temp/scratch deployment files
+*.bat
+*.sh
+deploy-*.js
+fix-cloudfront.*
+update-cloudfront-simple.cjs
+add-aliases.cjs
+generate-static*.php
+generate-complete-static.php
+create-clean-html.php
+fix-html-pages.php
+send-email.php
+deploy-guide.md
+deploy-commands.txt
+
+# Temp HTML files
+amarsinghsengar-clean.html
+amarsinghsengar-temp.html
+amarsinghsengar.html
+contact-*.html
+contact.html
+index-clean.html
+index-fixed.html
+index.html
+
+# Static site export
+static-site/
