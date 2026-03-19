@@ -105,20 +105,20 @@
         <div class="tech-grid">
             @php
             $technologies = [
-                ['name' => 'PHP', 'icon' => '🐘', 'level' => 95],
-                ['name' => 'Laravel', 'icon' => '⚙️', 'level' => 95],
-                ['name' => 'CodeIgniter', 'icon' => '🔥', 'level' => 90],
-                ['name' => 'JavaScript', 'icon' => '📜', 'level' => 85],
-                ['name' => 'MySQL', 'icon' => '🗄️', 'level' => 90],
-                ['name' => 'Python', 'icon' => '🐍', 'level' => 80],
-                ['name' => 'jQuery', 'icon' => '💫', 'level' => 85],
-                ['name' => 'AWS', 'icon' => '☁️', 'level' => 70],
+                ['name' => 'PHP',         'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg', 'level' => 95],
+                ['name' => 'Laravel',     'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg', 'level' => 95],
+                ['name' => 'CodeIgniter', 'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/codeigniter/codeigniter-plain.svg', 'level' => 90],
+                ['name' => 'JavaScript',  'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg', 'level' => 85],
+                ['name' => 'MySQL',       'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg', 'level' => 90],
+                ['name' => 'Python',      'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg', 'level' => 80],
+                ['name' => 'jQuery',      'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg', 'level' => 85],
+                ['name' => 'AWS',         'icon' => 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg', 'level' => 70],
             ];
             @endphp
-            
+
             @foreach($technologies as $tech)
             <div class="tech-item">
-                <span class="tech-icon">{{ $tech['icon'] }}</span>
+                <span class="tech-icon"><img src="{{ $tech['icon'] }}" alt="{{ $tech['name'] }}" width="40" height="40"></span>
                 <span class="tech-name">{{ $tech['name'] }}</span>
                 <div class="tech-level">
                     <div class="level-bar">
